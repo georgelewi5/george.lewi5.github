@@ -714,3 +714,38 @@ section.lazy-placeholder:after {
 .cid-s1CU7JUe2Q {
   background-image: url("../../../assets/images/will-1-v-1-george.jpg");
 }
+.cid-s1CYFAby1N {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-s1CYFAby1N .title {
+  padding-bottom: 2.5rem;
+}
+.cid-s1CYFAby1N .mbr-text {
+  color: #767676;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+.cid-s1CYFAby1N .iconfont-wrapper {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+.cid-s1CYFAby1N .iconfont-wrapper .amp-iconfont {
+  font-size: 2rem;
+}
+.cid-s1CYFAby1N .wrapper {
+  display: flex;
+  padding: 1rem 0;
+}
+.cid-s1CYFAby1N .wrapper .b-info {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-s1CYFAby1N .iconfont-wrapper {
+    display: none;
+  }
+}
