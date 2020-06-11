@@ -581,6 +581,11 @@ td, th {
   padding: 75px 0;
 }
 
+.banner-center {
+  text-align: center;
+  padding: ;
+}
+
 .text-center {
   text-align: center;
 }
