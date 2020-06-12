@@ -44,13 +44,7 @@ html {
   section #services li div:hover {
     transform: rotate(360deg);
   }
-  .gheading {
-    font-size: 50px;
-    line-height: 62px;
-    text-align: center;
-    padding: 100px;
-    font-family: 'Playfair Display', serif;
-}
+
 .centre {
   position: absolute;
   left: 50%; /* relative to nearest positioned ancestor or body element */
@@ -64,3 +58,11 @@ html {
   height: 1000px;
   margin: 0 auto;
   background-color: white;
+}
+
+#gheading {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+
+}
