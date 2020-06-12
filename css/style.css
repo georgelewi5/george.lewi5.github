@@ -1,7 +1,13 @@
 html {
   overflow-x: hidden;
 }
+#div1 {
+  display: inline-block;
+}
 
+#div2 {
+  display: inline-block;
+}
 body {
   background: #fff;
   font-family: "Open Sans", Arial, sans-serif;
