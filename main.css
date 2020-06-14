@@ -5,7 +5,6 @@
     --light: white;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-
 html {
     box-sizing: border-box;
     font-family: 'Playfair Display';
@@ -117,36 +116,39 @@ img {
     color: var(--black);
 }
 /* OUT NOW */
-.out-now {
-    place-self: center;
-    color: var(--light);
-    background: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 2rem;
-    font-weight: 700;
-    grid-area: out;
-}
 
 .boxes {
     display: grid;
     gap: 20px;
-    grid-template-rows: 100px, auto;
+    grid-template-rows: 2;
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 20px;
-    grid-template-areas: 
-    "out out out"
-    "first second third";
+    justify-content: center;
+ 
 }
-.box a {
-    grid-area: first;
+.out-now {
+    font-size: 4rem;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    max-height: 4em;
+    color: var(--light);
+    grid-row-start: 1;
+    grid-column: 2;
+    text-align: center;
+    
+}
+
+
+.a {
+    grid-row: 2;
+    grid-column: 1
 } 
-.box b {
-    grid-area: second;
+.b {
+    grid-row: 2;
+    grid-column: 2;
 } 
-.box c {
-    grid-area: third;
+.c {
+    grid-row: 2;
+    grid-column: 3;
 } 
 .box {
     background: transparent;
@@ -211,12 +213,14 @@ img {
 /* Contact */
 
 .contact {
-    background: var(--primary);
-    box-shadow: var(--shadow);
+    background: var(--dark);
     display: grid;
     gap: 30px;
     grid-template-rows: 100px 500px;
     padding: 3rem;
+    grid-template-areas: 
+    "contact"
+    "socials"
 }
 
 .contacth {
@@ -226,5 +230,16 @@ img {
     max-height: 4em;
     color: var(--light);
     text-align: center;
+    grid-area: contact;
 
+
+}
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
 }
