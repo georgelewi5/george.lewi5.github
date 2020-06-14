@@ -1,0 +1,121 @@
+/* CSS Variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --black: black;
+    --light: white;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+    color: var(--dark);
+}
+
+body {
+    background: #ccc;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+}
+
+
+
+
+/* Showcase */
+
+
+.showcase {
+    height: 100vh;
+    width: auto;
+    min-height: 400px;
+    background: url(img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    box-shadow: var(--shadow);
+    
+}
+
+.whole {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+}
+.whole h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 4em;
+    color: var(--light);
+    text-align: center;
+    line-height: 60vh;
+}
+.buttonp {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 51vh;   
+}
+.btn {
+    position: relative;
+    left: 50vh;
+    top: -8rem;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+.btn:hover {
+    background: white;
+    color: var(--black);
+}
+
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b'
+    }
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b'
+    }   
+}
