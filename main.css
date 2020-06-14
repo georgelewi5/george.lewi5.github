@@ -151,7 +151,63 @@ img {
 .box {
     background: transparent;
     text-align: center;
+    position: relative;
+    display: block;
 }
+
+/* Icons */
+/* 1 */
+.circle-icona {
+    background: black;
+    padding:0px;
+    border-radius: 50%;
+}
+.box i {
+    position: absolute; bottom:45%; left:45%; 
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+
+    transition-duration: 0.4s;
+}
+
+.box a:hover i { color: black; }
+.box a:hover .circle-icona { background: white; }
+/* 2 */
+.circle-iconb {
+    background: black;
+    padding:0px;
+    border-radius: 50%;
+}
+.box i {
+    position: absolute; bottom:45%; left:45%; 
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+
+    transition-duration: 0.4s;
+}
+
+.box a:hover i { color: black; }
+.box a:hover .circle-iconb { background: white; }
+/* 3 */
+.circle-iconc {
+    background: black;
+    padding:0px;
+    border-radius: 50%;
+}
+.box i {
+    position: absolute; bottom:45%; left:45%; 
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+
+    transition-duration: 0.4s;
+}
+
+.box a:hover i { color: black; }
+.box a:hover .circle-iconc { background: white; }
+
 /* Contact */
 
 .contact {
