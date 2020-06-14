@@ -73,11 +73,10 @@ img {
     height: 100vh;
     width: auto;
     min-height: 400px;
-    background: url(img/showcase.jpg);
+    background: url(img/cover.png);
     background-size: cover;
     background-position: center;
     padding: 4rem;
-    box-shadow: var(--shadow);
     margin-bottom: 20px;
     
 }
@@ -125,13 +124,11 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .2em;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 700;
     grid-area: out;
-    padding: 0.6rem 1.3rem;
-    margin: 0;
-    border: 2px solid var(--light);
 }
+
 .boxes {
     display: grid;
     gap: 20px;
