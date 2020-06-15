@@ -4,8 +4,8 @@
     --dark: black;
     --light: white;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    --background: black;
-    --text: white;
+    --background: white;
+    --text: black;
 }
 html {
     box-sizing: border-box;
@@ -94,7 +94,7 @@ img {
     margin-bottom: 0;
     margin-top: 0;
     max-height: 4em;
-    color: var(--text);
+    color: var(--light);
     text-align: center;
     line-height: 60vh;
 }
@@ -103,9 +103,9 @@ img {
     padding-top: 50px;
     margin-right: 50px;
     display: grid;
+    gap: 40px;
     justify-content: center;
     align-content: center;
-    gap: 40px;
     grid-auto-flow: column;
 }
 .btna {
@@ -175,6 +175,18 @@ img {
     grid-row: 2;
     grid-column: 3;
 } 
+.d {
+    grid-row: 3;
+    grid-column: 1;
+} 
+.e {
+    grid-row: 3;
+    grid-column: 2;
+} 
+.f {
+    grid-row: 3;
+    grid-column: 3;
+} 
 .box {
     background: transparent;
     text-align: center;
@@ -235,6 +247,99 @@ img {
 .box a:hover i { color: black; }
 .box a:hover .circle-iconc { background: white; }
 
+/* Book */
+
+.book {
+    background: var(--background);
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    grid-template-rows: 100px auto auto auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.book-title {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 4em;
+    color: var(--text);
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.book-para {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 2rem;
+    color: var(--text);
+    text-align: center;
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+}
+.bookimages {
+    display: grid;
+    gap: 4px;
+    grid-auto-flow: column;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+
+
+}
+.g {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+.h {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+.i {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.j {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+.k {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    object-fit: cover;
+    width: auto;
+    height: auto; 
+}
 /* Contact */
 
 .contact {
@@ -265,6 +370,9 @@ img {
     align-items: center;
     gap: 4px;
     grid-auto-flow: column;
+    border: 2px solid var(--text);
+
+ 
 }
 .social-icons {
     padding: 20px;
@@ -276,37 +384,49 @@ img {
     
 }
   /* Add a hover effect if you want */
-  .fa:hover {
-    color: black;
-    background: white;
-  }
-  .fab:hover {
-    color: black;
-    background: white;
-  }
-  .fas:hover {
-    color: black;
-    background: white;
-  }
+.fa-facebook:hover {
+    color: #3b5998;
+  
+}
+.fa-instagram:hover {
+    color: #ba36cc;
+ 
+}
+.fa-soundcloud:hover {
+    color: #dd7a1e;
+
+}
+.fab:hover {
+    color: var(--text);
+ 
+}
+.fas:hover {
+    color: var(--text);
+    background: var(--background);
+}
+.fa-spotify:hover {
+      background: var(--background) !important;
+      color: var(--text) !important;
+}
  
   /* Set a specific color for each brand */
   
   /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  
+.fa-facebook {
+    
+    color: var(--text);
+    transition-duration: 0.5s;
   }
   
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  /* Instagram */
+.fa-instagram {
+    color: var(--text);
+    transition-duration: 0.5s;
   }
 /* Soundcloud */
 .fa-soundcloud {
-    color: white;
-    background: #ff7700;
+    color: var(--text);
+    transition-duration: 0.5s;
 }
 /* apple music */
 .amusic {
@@ -317,40 +437,20 @@ img {
 }
 /* spotify */
 .fa-spotify {
-    color: black;
-    background: #1DB954;
-    padding: 2px;
-    font-size: 68px;
-    translate: 0 0 0 10px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50px;
+    color: var(--text);
+    transition-duration: 0.5s;
 }
+/* email */
 .fa-envelope {
-    background: #55ACEE;
-    color: white;
+    
+    color: var(--text);
+    transition-duration: 0.5s;
 }
-/* Info */
-
-.info {
-    background: var(--primary);
-    box-shadow: var(--shadow);
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 3rem;
-}
-/* Portfolio */
-
-.portfolio {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
-}
-
-.portfolio img {
-    width: 100%;
-    box-shadow: var(--shadow);
+/* youtube */
+.fa-youtube {
+    
+    color: var(--text);
+    transition-duration: 0.5s;
 }
 /* footer */
 footer {
