@@ -9,6 +9,11 @@ html {
     box-sizing: border-box;
     font-family: 'Playfair Display';
     color: var(--dark);
+    scroll-behavior: smooth;
+    
+}
+window.onbeforeunload = function () {
+    window.scrollTo(0,0);
 }
 
 body {
@@ -126,18 +131,16 @@ img {
  
 }
 .out-now {
+    position: relative;
     font-size: 4rem;
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
     max-height: 4em;
+    font-style: bold;
     color: var(--light);
     grid-row-start: 1;
     grid-column: 2;
     text-align: center;
     
 }
-
-
 .a {
     grid-row: 2;
     grid-column: 1
@@ -224,13 +227,14 @@ img {
 }
 
 .contacth {
-    font-size: 4rem;
+    font-size: 64px;
     margin-bottom: 0;
     margin-top: 0;
     max-height: 4em;
     color: var(--light);
     text-align: center;
     grid-area: contact;
+    
 
 
 }
