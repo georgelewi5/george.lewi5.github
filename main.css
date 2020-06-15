@@ -98,8 +98,17 @@ img {
     text-align: center;
     line-height: 60vh;
 }
-
+/* Buttons */
 .btn {
+    padding-top: 50px;
+    margin-right: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    grid-auto-flow: column;
+}
+.btna {
     background-color: var(--dark);
     color: var(--light);
     padding: 0.6rem 1.3rem;
@@ -111,11 +120,25 @@ img {
     font-size: 18px;
     font-weight: 700;
     transition-duration: 0.4s;
-    position: relative;
-    top: 9vh;
 }
-
-.btn:hover {
+.btnb {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    border: 2px solid var(--light);
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 18px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+.btna:hover {
+    background: var(--light);
+    color: var(--black);
+}
+.btnb:hover {
     background: var(--light);
     color: var(--black);
 }
@@ -261,6 +284,10 @@ img {
     color: black;
     background: white;
   }
+  .fas:hover {
+    color: black;
+    background: white;
+  }
  
   /* Set a specific color for each brand */
   
@@ -284,25 +311,47 @@ img {
 /* apple music */
 .amusic {
     padding: 0px !important;
-    width: 70px;
-    height: 70px;
+    width: 77px;
+    height: 77px;
+    align-items: center;
 }
 /* spotify */
 .fa-spotify {
     color: black;
     background: #1DB954;
-    padding: 3px;
+    padding: 2px;
     font-size: 68px;
-    width: 68px;
+    translate: 0 0 0 10px;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
-    -webkit-background-clip: padding-box; 
-    -moz-background-clip:    padding ; 
-    background-clip:         padding-box;
+}
+.fa-envelope {
+    background: #55ACEE;
+    color: white;
+}
+/* Info */
 
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+/* Portfolio */
+
+.portfolio {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 }
 
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
 /* footer */
 footer {
     margin-top: 2rem;
