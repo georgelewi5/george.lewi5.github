@@ -12,9 +12,6 @@ html {
     scroll-behavior: smooth;
     
 }
-window.onbeforeunload = function () {
-    window.scrollTo(0,0);
-}
 
 body {
     background: var(--dark);
