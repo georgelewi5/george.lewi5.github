@@ -4,6 +4,8 @@
     --dark: black;
     --light: white;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --background: black;
+    --text: white;
 }
 html {
     box-sizing: border-box;
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-    background: var(--dark);
+    background: var(--background);
     line-height: 1.4;
 }
 
@@ -92,7 +94,7 @@ img {
     margin-bottom: 0;
     margin-top: 0;
     max-height: 4em;
-    color: var(--light);
+    color: var(--text);
     text-align: center;
     line-height: 60vh;
 }
@@ -122,7 +124,7 @@ img {
 .boxes {
     display: grid;
     gap: 20px;
-    grid-template-rows: 2;
+    grid-template-rows: 100px auto;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
  
@@ -132,7 +134,7 @@ img {
     font-size: 4rem;
     max-height: 4em;
     font-style: bold;
-    color: var(--light);
+    color: var(--text);
     grid-row-start: 1;
     grid-column: 2;
     text-align: center;
@@ -213,10 +215,10 @@ img {
 /* Contact */
 
 .contact {
-    background: var(--dark);
+    background: var(--background);
     display: grid;
     gap: 30px;
-    grid-template-rows: 100px 500px;
+    grid-template-rows: 100px auto;
     padding: 3rem;
     grid-template-areas: 
     "contact"
@@ -228,11 +230,76 @@ img {
     margin-bottom: 0;
     margin-top: 0;
     max-height: 4em;
-    color: var(--light);
+    color: var(--text);
     text-align: center;
     grid-area: contact;
+}
+/* Style all font awesome icons */
+.social-bar {
+    display: grid;
+    grid-area: socials;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+.social-icons {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
     
-
+}
+  /* Add a hover effect if you want */
+  .fa:hover {
+    color: black;
+    background: white;
+  }
+  .fab:hover {
+    color: black;
+    background: white;
+  }
+ 
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+/* Soundcloud */
+.fa-soundcloud {
+    color: white;
+    background: #ff7700;
+}
+/* apple music */
+.amusic {
+    padding: 0px !important;
+    width: 70px;
+    height: 70px;
+}
+/* spotify */
+.fa-spotify {
+    color: black;
+    background: #1DB954;
+    padding: 3px;
+    font-size: 68px;
+    width: 68px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    -webkit-background-clip: padding-box; 
+    -moz-background-clip:    padding ; 
+    background-clip:         padding-box;
 
 }
 
