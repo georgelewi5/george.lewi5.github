@@ -152,14 +152,14 @@ img {
 .boxes {
     display: grid;
     gap: 20px;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 80px auto;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
  
 }
 .out-now {
     position: relative;
-    font-size: 4rem;
+    font-size: 3.5rem;
     max-height: 4em;
     font-style: bold;
     color: var(--text);
