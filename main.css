@@ -212,7 +212,7 @@ img {
     border-radius: 50%;
 }
 
-.box:hover i {
+.circle-icon:hover {
      color: black;
 }
 
@@ -222,12 +222,13 @@ img {
 .columncreator {
     padding-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 395.33px 1fr;
 }
 
 .book-title {
     position: relative;
-    font-size: 4rem;
+    font-size: 3.5rem;
     max-height: 4em;
     font-style: bold;
     color: var(--text);
@@ -240,9 +241,9 @@ img {
 
 .columncontainer {
     display: grid;
-    
-    grid-template-columns: 4fr 1fr;
-
+    grid-template-rows: 33vh 33vh 33vh;
+    gap: 20px;
+    padding-top: 20px;
 }
 .book-para {
     font-size: 1.3em;
@@ -252,13 +253,14 @@ img {
     color: var(--text);
     text-align: center;
     grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 .book-image {
-    height: 125%;
-    width: 125%;
-    max-width: 1000%;
-    grid-column-start: 1;
+    
+    max-width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 3;
 }
 .btnc {
     color: var(--text);
