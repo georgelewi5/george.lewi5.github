@@ -277,8 +277,8 @@ img {
 .columncontainer {
     display: grid;
     
-    grid-template-columns: auto auto 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 4fr 1fr;
+
 }
 .book-para {
     font-size: 1.3em;
@@ -296,74 +296,13 @@ bookimages {
     min-height: 100%;
 }
 .book-image {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    height: 125%;
+    width: 125%;
+    max-width: 1000%;
     grid-column-start: 1;
-    grid-column-end: 5;
 }
-.one {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    justify-content: center;
-}
-.two {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    justify-content: center;
-}
-.g {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    object-fit: cover;
-    width: auto;
-    height: auto;
-}
-.h {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    object-fit: cover;
-    width: auto;
-    height: auto;
-}
-.i {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-}
-.j {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    object-fit: cover;
-    width: auto;
-    height: auto;
-}
-.k {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: auto;
-    height: 177;
-    gap: 5px;
+
  
- 
-}
 /* Contact */
 
 .contact {
