@@ -90,9 +90,12 @@ img {
 }
 
 .whole {
+    display: grid;
     margin: 0 auto;
+    grid-template-rows: 35vh 65vh;
     width: 100%;
     height: 100%;
+    justify-items: center;
 }
 .whole h1 {
     font-size: 5rem;
@@ -101,16 +104,14 @@ img {
     max-height: 4em;
     color: var(--light);
     text-align: center;
-    line-height: 60vh;
+    align-self: end;
 }
 /* Buttons */
 .btn {
     padding-top: 50px;
-    margin-right: 50px;
     display: grid;
     gap: 100px;
-    justify-content: center;
-    align-content: center;
+    align-items: start;
     grid-auto-flow: column;
 }
 .btna {
@@ -125,6 +126,7 @@ img {
     font-size: 18px;
     font-weight: 700;
     transition-duration: 0.4s;
+    
 }
 .btnb {
     background-color: var(--dark);
@@ -148,14 +150,18 @@ img {
     color: var(--black);
 }
 /* OUT NOW */
-
+.box {
+    background: transparent;
+    position: relative;
+    justify-items: center;
+  
+}
 .boxes {
     display: grid;
     gap: 20px;
     grid-template-rows: 80px auto;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
- 
 }
 .out-now {
     position: relative;
@@ -193,49 +199,23 @@ img {
     grid-row: 3;
     grid-column: 3;
 } 
-.box {
-    background: transparent;
-    text-align: center;
-    position: relative;
-    display: block;
-}
 
 /* Icons */
 .box i {
-    position: absolute; bottom:45%; left:45%; 
     color: white;
     text-decoration: none;
     transition-duration: 0.4s;
 }
-/* 1 */
-.circle-icona {
-    position: absolute; bottom:50%; left:50% !important; 
+.circle-icon {
+    position: absolute; bottom:45%; left:45%; 
     padding:0px;
     border-radius: 50%;
 }
 
-
-
-/* 2 */
-.circle-iconb {
-    background: black;
-    padding:0px;
-    border-radius: 50%;
+.box:hover i {
+     color: black;
 }
 
-
-.box a:hover i { color: black; }
-.box a:hover .circle-iconb { background: white; }
-/* 3 */
-.circle-iconc {
-    background: black;
-    padding:0px;
-    border-radius: 50%;
-}
-
-
-.box a:hover i { color: black; }
-.box a:hover .circle-iconc { background: white; }
 
 /* Book */
 
