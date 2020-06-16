@@ -108,7 +108,7 @@ img {
     padding-top: 50px;
     margin-right: 50px;
     display: grid;
-    gap: 40px;
+    gap: 100px;
     justify-content: center;
     align-content: center;
     grid-auto-flow: column;
