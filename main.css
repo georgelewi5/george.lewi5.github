@@ -246,21 +246,27 @@ img {
     padding-top: 20px;
 }
 .book-para {
+    display: grid;
+    grid-template-rows: 10em 3em;
     font-size: 1.3em;
     margin-bottom: 0;
     margin-top: 0;
     max-height: 2rem;
-    color: var(--text);
     text-align: center;
     grid-column-start: 3;
     grid-row-start: 1;
+
+}
+.paratext {
+    grid-row: 1;
+    color: var(--text);
 }
 
 .book-image {
     
     max-width: 100%;
     grid-column: 1 / span 2;
-    grid-row: 1 /span 3;
+    grid-row: 1 / span 3;
 }
 .btnc {
     color: var(--text);
@@ -273,6 +279,7 @@ img {
     font-size: 18px;
     font-weight: 700;
     transition-duration: 0.4s;
+    grid-row: 2;
 }
 .btnc:hover {
     background: var(--text);
