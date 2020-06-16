@@ -81,7 +81,7 @@ img {
     height: 100vh;
     width: auto;
     min-height: 400px;
-    background: url(img/cover.jpg);
+    background: url(img/cover.webp);
     background-size: cover;
     background-position: center;
     padding: 4rem;
