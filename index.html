@@ -18,6 +18,7 @@
         <script src="https://kit.fontawesome.com/b4cea2a55a.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
                 var scrollpos = localStorage.getItem('scrollpos');
@@ -32,110 +33,124 @@
     <body>
         <body onload="scrollY: 100;"></body>
         <div class="wrapper">
-           <!--TOP Container-->
-            <section>
-                <header class="showcase" id="top">
-                    <div class="whole sfade">
-                        <h1>WILLIAM HOPKINS</h1>
-                            <div class="btn">
-                                <div><a class="btna" href="#socials">socials</a></div>
-                                <div><a class="btnb" href="#out-now">Out now</a></div>
-                                <div><a class="btnb" href="#book">Book</a></div>
-                                
+            <div>
+                <div class="social-bar sticky">
+                    <a href="#" class="fa fa-facebook social-icons l"></a>
+                    <a href="#" class="fab fa-instagram social-icons l"></a>
+                    <a href="mailto:georgectlewis@gmail.com?cc=willh2712@gmail.com&subject=Booking%20William%20Hopkins" target="_blank" rel="noopener noreferrer" href="#" class="fas fa-envelope social-icons l" ></a>
+                    <a href="#" class="fab fa-youtube social-icons l"></a>
+                    <a href="#" class="fab fa-spotify social-icons l"></a>
+                    <a href="#" class="fab fa-apple social-icons l"></a>
+                    <a href="#" class="fab fa-soundcloud social-icons l"></a>
+                </div>
+                <!--TOP Container-->
+                <section>
+                    <header class="showcase" id="top">
+                        <div class="whole sfade">
+                            <h1>WILLIAM HOPKINS</h1>
+                                <div class="btn">
+                                    <div><a class="btna" href="#socials">socials</a></div>
+                                    <div><a class="btnb" href="#out-now">Out now</a></div>
+                                    <div><a class="btnb" href="#book">Book</a></div>
+                                    
+                                </div>
+                        </div>
+                    </header>
+                </section>
+                <section class="padding-area">
+                <!--Boxes-->
+                        <section class="boxes" id="out-now">
+                            <div class="out-now">
+                                <h1" style="margin-top: 0px;margin-bottom: 0px;">OUT NOW</h1>
                             </div>
+                            <div class="box a">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/will.webp"><!--
+                                <h3>ANalythics</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                            <div class="box b">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/Will2.webp"><!--
+                                <h3>Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                            <div class="box c">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/wonderwall.webp"><!--
+                                <h3>Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                            <div class="box d">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/Will9.webp"><!--
+                                <h3>ANalythics</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                            <div class="box e">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/Will7.webp"><!--
+                                <h3>Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                            <div class="box f">
+                                <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
+                                <img src="img/wonderwall.webp"><!--
+                                <h3>Development</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                            </div>
+                        </section>
+                <!--Booking section-->
+                <section class="book" id="book">
+                    <div class="columncreator">
+                        <div class="book-title">BOOK</div>
                     </div>
-                </header>
-            </section>
-            <section class="padding-area">
-            <!--Boxes-->
-                    <section class="boxes" id="out-now">
-                        <div class="out-now">
-                            <h1" style="margin-top: 0px;margin-bottom: 0px;">OUT NOW</h1>
+                    <div class="columncontainer">
+                        <div class="book-para">
+                            <p class="para-text">Im will and I sing music styles to lots of people.<br>You can hire me for any event! Be it birthday,<br> wedding or music night at the pub.<br>I'm more than a musician, bringing entertainment<br>to all with my customiseable routine.</p>
+                            <div><a class="btnc" href="mailto:georgectlewis@gmail.com?cc=willh2712@gmail.com&subject=Booking%20William%20Hopkins" target="_blank" rel="noopener noreferrer" >Book</a></div>
                         </div>
-                        <div class="box a">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/will.webp"><!--
-                            <h3>ANalythics</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                        <div class="book-test">
+                            <p class="no-margin"> Im will and I sing music styles to lots of people.<br>You can hire me for any event! Be it birthday,<br> wedding or music night at the pub.<br>I'm more than a musician, bringing entertainment<br>to all with my customiseable routine.</p>
                         </div>
-                        <div class="box b">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/Will2.webp"><!--
-                            <h3>Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                        <div>
+                            <img src="img/book.webp" class="img book-image" alt="">
                         </div>
-                        <div class="box c">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/wonderwall.webp"><!--
-                            <h3>Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
+                        <!--<div class="bookimages one">
+                            <!--<img class="imagea" src="img/pic1.jpg" alt="#">--
+                            <img src="img/performace 1.jpeg" class="img g" alt="">
+                            <img src="img/performance 2.jpeg" class="img h" alt="">
                         </div>
-                        <div class="box d">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/Will9.webp"><!--
-                            <h3>ANalythics</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
-                        </div>
-                        <div class="box e">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/Will7.webp"><!--
-                            <h3>Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
-                        </div>
-                        <div class="box f">
-                            <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
-                            <img src="img/wonderwall.webp"><!--
-                            <h3>Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse.</p>-->
-                        </div>
-                    </section>
-            <!--Booking section-->
-            <section class="book" id="book">
-                <div class="columncreator">
-                    <div class="book-title">BOOK</div>
-                </div>
-                <div class="columncontainer">
-                    <div class="book-para">
-                        <p class="paratext">Im will and I sing music styles to lots of people.<br>You can hire me for any event! Be it birthday,<br> wedding or music night at the pub.<br>I'm more than a musician, bringing entertainment<br>to all with my customiseable routine.</p>
-                        <div><a class="btnc" href="mailto:georgectlewis@gmail.com?cc=willh2712@gmail.com&subject=Booking%20William%20Hopkins" target="_blank" rel="noopener noreferrer" >Book</a></div>
-                    </div>
-                    <div>
-                        <img src="img/book.webp" class="img book-image" alt="">
-                    </div>
-                    <!--<div class="bookimages one">
-                        <!--<img class="imagea" src="img/pic1.jpg" alt="#">--
-                        <img src="img/performace 1.jpeg" class="img g" alt="">
-                        <img src="img/performance 2.jpeg" class="img h" alt="">
-                    </div>
-                    <img src="img/performance 5.jpeg" class="img k" alt="">
-                    <div class="bookimages two">
                         <img src="img/performance 5.jpeg" class="img k" alt="">
-                        <img src="img/performance 3.jpg" class="img i" alt="">
-                        <img src="img/performance 4.jpeg" class="img j" alt="">-->
-                        
-                        <!--<img src="img/performance 5.jpeg" class="img k" alt="">
-                        <img src="ttps://source.unsplash.com/random/205x200" class="img n" alt="">-->
+                        <div class="bookimages two">
+                            <img src="img/performance 5.jpeg" class="img k" alt="">
+                            <img src="img/performance 3.jpg" class="img i" alt="">
+                            <img src="img/performance 4.jpeg" class="img j" alt="">-->
+                            
+                            <!--<img src="img/performance 5.jpeg" class="img k" alt="">
+                            <img src="ttps://source.unsplash.com/random/205x200" class="img n" alt="">-->
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!--Socials Section-->
-            <section class="contact" id="socials">
-                <div class="contacth">SOCIALS</div>
-                <div class="social-bar">
-                    <a href="#" class="fa fa-facebook social-icons"></a>
-                    <a href="#" class="fab fa-instagram social-icons"></a>
-                    <a href="mailto:georgectlewis@gmail.com?cc=willh2712@gmail.com&subject=Booking%20William%20Hopkins" target="_blank" rel="noopener noreferrer" href="#" class="fas fa-envelope social-icons" ></a>
-                    <a href="#" class="fab fa-youtube social-icons"></a>
-                    <a href="#" class="fab fa-spotify social-icons"></a>
-                    <a href="#" class="fab fa-apple social-icons"></a>
-                    <a href="#" class="fab fa-soundcloud social-icons"></a>
-                </div>
-            </section>
-            </section>
-                <!--Footer-->
-            <footer>
-                <p>George Lewis &copy; 2020</p>
-            </footer>
+                </section>
+                <!--Socials Section-->
+                <section class="contact" id="socials">
+                    <div class="contacth">SOCIALS</div>
+                    <div class="social-bar">
+                        <a href="#" class="fa fa-facebook social-icons"></a>
+                        <a href="#" class="fab fa-instagram social-icons"></a>
+                        <a href="mailto:georgectlewis@gmail.com?cc=willh2712@gmail.com&subject=Booking%20William%20Hopkins" target="_blank" rel="noopener noreferrer" href="#" class="fas fa-envelope social-icons" ></a>
+                        <a href="#" class="fab fa-youtube social-icons"></a>
+                        <a href="#" class="fab fa-spotify social-icons"></a>
+                        <a href="#" class="fab fa-apple social-icons"></a>
+                        <a href="#" class="fab fa-soundcloud social-icons"></a>
+                    </div>
+                </section>
+                </section>
+                    <!--Footer-->
+                <footer>
+                    <p>George Lewis &copy; 2020</p>
+                </footer>
+            </div>
         </div>
         <!--Wrapper ends-->
      </body>

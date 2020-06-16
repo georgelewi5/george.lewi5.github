@@ -6,6 +6,7 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --background: white;
     --text: black;
+    --icons: white;
 }
 html {
     box-sizing: border-box;
@@ -32,8 +33,98 @@ img {
 .wrapper {
     display: grid;
 }
+/* sticky */
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+/* Social bar */
+.social-bar {
+    display: grid;
+    grid-area: socials;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
+    grid-auto-flow: column;
+    z-index: 9999;
+    background: #2d4249;
+    overflow-y: scroll;
+}
+.social-bar.shrink {
+    background: white;
+    transition: background 0.5s;
+}
+.l.shrink {
+    color: black;
+    transition: color 0.5s;
+}
+.social-icons {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;   
+}
+  /* Add a hover effect if you want */
+.fa-facebook:hover {
+    color: #3b5998;
+  
+}
+.fa-instagram:hover {
+    color: #ba36cc;
+ 
+}
+.fa-soundcloud:hover {
+    color: #dd7a1e;
 
-
+}
+.fa-envelope:hover {
+    color: lightblue;
+}
+.fa-youtube:hover {
+    color: red;
+}
+.fa-spotify:hover {
+    color: #1DB954;
+}
+.fa-apple:hover {
+    color: #7D7D7D;
+} 
+  /* Set a specific color for each brand */
+.l {
+    color: white;
+}
+  /* Facebook */
+.fa-facebook {
+    transition-duration: 0.25s;
+  }
+  
+  /* Instagram */
+.fa-instagram {
+    transition-duration: 0.25s;
+  }
+/* Soundcloud */
+.fa-soundcloud {
+    transition-duration: 0.25s;
+}
+/* apple music */
+.fa-apple {
+    transition-duration: 0.25s;
+}
+/* spotify */
+.fa-spotify {
+    transition-duration: 0.25s;
+}
+/* email */
+.fa-envelope {
+    transition-duration: 0.25s;
+}
+/* youtube */
+.fa-youtube {
+    transition-duration: 0.25s;
+}
 /* Showcase */
 
 .sfade {
@@ -85,6 +176,7 @@ img {
     background-size: cover;
     background-position: center;
     padding: 4rem;
+    padding-top: 0;
     margin-bottom: 20px;
     
 }
@@ -246,8 +338,6 @@ img {
     padding-top: 20px;
 }
 .book-para {
-    display: grid;
-    grid-template-rows: 10em 3em;
     font-size: 1.3em;
     margin-bottom: 0;
     margin-top: 0;
@@ -257,16 +347,10 @@ img {
     grid-row-start: 1;
 
 }
-.paratext {
+.para-text {
+    margin-bottom: 40px;
     grid-row: 1;
     color: var(--text);
-}
-
-.book-image {
-    
-    max-width: 100%;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 3;
 }
 .btnc {
     color: var(--text);
@@ -279,8 +363,26 @@ img {
     font-size: 18px;
     font-weight: 700;
     transition-duration: 0.4s;
-    grid-row: 2;
 }
+.book-test {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 2rem;
+    text-align: center;
+    color: var(--text);
+}
+.no-margin {
+    margin: 0px;
+}
+.book-image {
+    max-width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
 .btnc:hover {
     background: var(--text);
     color: var(--background);
@@ -307,93 +409,6 @@ img {
     color: var(--text);
     text-align: center;
     grid-area: contact;
-}
-/* Style all font awesome icons */
-.social-bar {
-    display: grid;
-    grid-area: socials;
-    justify-items: center;
-    align-items: center;
-    gap: 4px;
-    grid-auto-flow: column;
-    border: 2px solid var(--text);
-
- 
-}
-.social-icons {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    
-}
-  /* Add a hover effect if you want */
-.fa-facebook:hover {
-    color: #3b5998;
-  
-}
-.fa-instagram:hover {
-    color: #ba36cc;
- 
-}
-.fa-soundcloud:hover {
-    color: #dd7a1e;
-
-}
-.fa-envelope:hover {
-    color: lightblue;
-}
-.fa-youtube:hover {
-    color: red;
-}
-.fa-spotify:hover {
-    color: #1DB954;
-}
-.fa-apple:hover {
-    color: #7D7D7D;
-} 
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-.fa-facebook {
-    
-    color: var(--text);
-    transition-duration: 0.25s;
-  }
-  
-  /* Instagram */
-.fa-instagram {
-    color: var(--text);
-    transition-duration: 0.25s;
-  }
-/* Soundcloud */
-.fa-soundcloud {
-    color: var(--text);
-    transition-duration: 0.25s;
-}
-/* apple music */
-.fa-apple {
-    color: var(--text);
-    transition-duration: 0.25s;
-}
-/* spotify */
-.fa-spotify {
-    color: var(--text);
-    transition-duration: 0.25s;
-}
-/* email */
-.fa-envelope {
-    
-    color: var(--text);
-    transition-duration: 0.25s;
-}
-/* youtube */
-.fa-youtube {
-    
-    color: var(--text);
-    transition-duration: 0.25s;
 }
 /* footer */
 footer {
