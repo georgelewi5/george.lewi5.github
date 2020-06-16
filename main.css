@@ -201,37 +201,28 @@ img {
 }
 
 /* Icons */
-/* 1 */
-.circle-icona {
-    background: black;
-    padding:0px;
-    border-radius: 50%;
-}
 .box i {
     position: absolute; bottom:45%; left:45%; 
     color: white;
-    border: 2px solid white;
     text-decoration: none;
-
     transition-duration: 0.4s;
 }
+/* 1 */
+.circle-icona {
+    position: absolute; bottom:50%; left:50% !important; 
+    padding:0px;
+    border-radius: 50%;
+}
 
-.box a:hover i { color: black; }
-.box a:hover .circle-icona { background: white; }
+
+
 /* 2 */
 .circle-iconb {
     background: black;
     padding:0px;
     border-radius: 50%;
 }
-.box i {
-    position: absolute; bottom:45%; left:45%; 
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
 
-    transition-duration: 0.4s;
-}
 
 .box a:hover i { color: black; }
 .box a:hover .circle-iconb { background: white; }
@@ -241,14 +232,7 @@ img {
     padding:0px;
     border-radius: 50%;
 }
-.box i {
-    position: absolute; bottom:45%; left:45%; 
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
 
-    transition-duration: 0.4s;
-}
 
 .box a:hover i { color: black; }
 .box a:hover .circle-iconc { background: white; }
@@ -289,19 +273,29 @@ img {
     text-align: center;
     grid-column-start: 3;
 }
-bookimages {
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-}
+
 .book-image {
     height: 125%;
     width: 125%;
     max-width: 1000%;
     grid-column-start: 1;
 }
-
+.btnc {
+    color: var(--text);
+    padding: 0.6rem 1.3rem;
+    border: 2px solid var(--text);
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 18px;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+.btnc:hover {
+    background: var(--text);
+    color: var(--background);
+}
  
 /* Contact */
 
