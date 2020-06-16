@@ -95,34 +95,6 @@ div.sticky {
   /* Set a specific color for each brand */
 .l {
     color: white;
-}
-  /* Facebook */
-.fa-facebook {
-    transition-duration: 0.25s;
-  }
-  
-  /* Instagram */
-.fa-instagram {
-    transition-duration: 0.25s;
-  }
-/* Soundcloud */
-.fa-soundcloud {
-    transition-duration: 0.25s;
-}
-/* apple music */
-.fa-apple {
-    transition-duration: 0.25s;
-}
-/* spotify */
-.fa-spotify {
-    transition-duration: 0.25s;
-}
-/* email */
-.fa-envelope {
-    transition-duration: 0.25s;
-}
-/* youtube */
-.fa-youtube {
     transition-duration: 0.25s;
 }
 /* Showcase */
@@ -202,7 +174,7 @@ div.sticky {
 .btn {
     padding-top: 50px;
     display: grid;
-    gap: 100px;
+    gap: 30px;
     align-items: start;
     grid-auto-flow: column;
 }
@@ -336,6 +308,7 @@ div.sticky {
     grid-template-rows: 33vh 33vh 33vh;
     gap: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .book-para {
     font-size: 1.3em;
@@ -388,28 +361,7 @@ div.sticky {
     color: var(--background);
 }
  
-/* Contact */
 
-.contact {
-    background: var(--background);
-    display: grid;
-    gap: 30px;
-    grid-template-rows: 100px auto;
-    padding: 3rem;
-    grid-template-areas: 
-    "contact"
-    "socials"
-}
-
-.contacth {
-    font-size: 64px;
-    margin-bottom: 0;
-    margin-top: 0;
-    max-height: 4em;
-    color: var(--text);
-    text-align: center;
-    grid-area: contact;
-}
 /* footer */
 footer {
     margin-top: 2rem;
