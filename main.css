@@ -13,7 +13,6 @@ html {
     font-family: 'Playfair Display';
     color: var(--dark);
     scroll-behavior: smooth;
-    
 }
 
 body {
@@ -236,8 +235,11 @@ div.sticky {
     grid-row-start: 1;
     grid-column: 2;
     text-align: center;
-    border: 2px solid var(--text);
-    
+    border: 2px solid var(--text);   
+}
+.listen-now {
+    text-align: center;
+    text-transform: uppercase;
 }
 .a {
     grid-row: 2;
@@ -305,23 +307,26 @@ div.sticky {
 
 .columncontainer {
     display: grid;
-    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-rows: auto;
     gap: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;;
 }
 .book-para {
     font-size: 1.3em;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 50%;
     max-height: 2rem;
-    text-align: center;
     grid-column-start: 3;
     grid-row-start: 1;
 
 }
 .para-text {
     margin-bottom: 40px;
+    grid-row: 1;
+    color: var(--text);
+}
+.para-textb {
+    margin-top: 40px;
     grid-row: 1;
     color: var(--text);
 }
