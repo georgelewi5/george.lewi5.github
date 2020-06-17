@@ -32,16 +32,19 @@ img {
 .wrapper {
     display: grid;
 }
+
 /* sticky */
 div.sticky {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
   }
+
 /* Social bar */
 .social-bar {
     display: grid;
-    grid-area: socials;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
     gap: 4px;
@@ -69,27 +72,31 @@ div.sticky {
   /* Add a hover effect if you want */
 .fa-facebook:hover {
     color: #3b5998;
-  
+    grid-area: one;
 }
 .fa-instagram:hover {
     color: #ba36cc;
- 
+    grid-area: two;
 }
 .fa-soundcloud:hover {
     color: #dd7a1e;
-
+    grid-area: three;
 }
 .fa-envelope:hover {
     color: lightblue;
+    grid-area: four;
 }
 .fa-youtube:hover {
     color: red;
+    grid-area: five;
 }
 .fa-spotify:hover {
     color: #1DB954;
+    grid-area: six;
 }
 .fa-apple:hover {
     color: #7D7D7D;
+    grid-area: seven;
 } 
   /* Set a specific color for each brand */
 .l {
@@ -254,15 +261,18 @@ div.sticky {
 .box {
     background: transparent;
     position: relative;
-    justify-items: center;
-  
 }
 .boxes {
+    padding-top: 20px;
     display: grid;
     gap: 20px;
-    grid-template-rows: 80px auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    grid-template-areas: 
+    ". outnow ."
+    "a b c"
+    "d e f";
 }
 .out-now {
     position: relative;
@@ -270,38 +280,28 @@ div.sticky {
     max-height: 4em;
     font-style: bold;
     color: var(--text);
-    grid-row-start: 1;
-    grid-column: 2;
     text-align: center;
-    border: 2px solid var(--text);   
-}
-.listen-now {
-    text-align: center;
-    text-transform: uppercase;
+    border: 2px solid var(--text);
+    justify-items: center;
+    grid-area: outnow;
 }
 .a {
-    grid-row: 2;
-    grid-column: 1
+    grid-area: a;
 } 
 .b {
-    grid-row: 2;
-    grid-column: 2;
+    grid-area: b;
 } 
 .c {
-    grid-row: 2;
-    grid-column: 3;
+    grid-area: c;
 } 
 .d {
-    grid-row: 3;
-    grid-column: 1;
+    grid-area: d;
 } 
 .e {
-    grid-row: 3;
-    grid-column: 2;
+    grid-area: e;
 } 
 .f {
-    grid-row: 3;
-    grid-column: 3;
+    grid-area: f;
 } 
 
 /* Icons */
@@ -413,4 +413,32 @@ footer {
     text-align: center;
     padding: 1rem;
     margin: 0px !important;
+}
+@media (max-width: 950px) {
+    .boxes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e f";
+    }
+}
+@media (max-width: 540px) {
+    .boxes {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "a"
+        "b";
+    }
+    .c .d .e .f {
+        display: none;
+    }
+    .social-bar {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        
+    }
 }
