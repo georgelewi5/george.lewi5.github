@@ -13,6 +13,7 @@ html {
     font-family: 'Playfair Display';
     color: var(--dark);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     box-sizing: border-box;
     width: 100vw;
     overflow-x: hidden;
+    position: relative;
 }
 
 img {
@@ -420,6 +422,7 @@ footer {
 @media (max-width: 950px) {
     .boxes {
         grid-template-columns: 50vw 50vw;
+        justify-content: center;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
         "a b"
@@ -468,6 +471,7 @@ footer {
 @media (max-width: 540px) {
     .boxes {
         grid-template-columns: 100vw;
+        gap: 0px;
         grid-template-rows: auto auto;
         grid-template-areas: 
         "a"
