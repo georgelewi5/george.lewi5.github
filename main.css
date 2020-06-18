@@ -258,6 +258,13 @@ div.sticky {
 .sizing {
     width: 100vw;
 }
+.columncreatorb {
+    padding-top: 60px;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    width: 100vw;
+}
 .out-title {
     position: relative;
     font-size: 3.5rem;
@@ -475,6 +482,11 @@ footer {
     }
     .columncreator {
         padding-top: 30px;
+        grid-template-rows: 50px;
+    }
+    .columncreatorb {
+        padding-top: 30px;
+        grid-template-columns: 30vw 40vw 30vw;
         grid-template-rows: 50px;
     }
 }
