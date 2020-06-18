@@ -473,6 +473,10 @@ footer {
     .book-title {
         font-size: 2rem;
     }
+    .columncreator {
+        padding-top: 30px;
+        grid-template-rows: 50px;
+    }
 }
 @media (max-width: 540px) {
     .boxes {
@@ -502,7 +506,7 @@ footer {
     }
     .columncontainer {
         grid-template-columns: auto;
-        grid-template-rows: auto 500px;
+        grid-template-rows: auto 200px;
         align-content: center;
         grid-template-areas: 
         "img"
