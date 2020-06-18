@@ -18,3 +18,12 @@ $(function() {
         }
     });
 });
+document.addEventListener("deviceready", onDeviceReady, false);
+    function scroll() 
+    {
+        myScroll = new IScroll('.wrapper', { mouseWheel:true });
+    }
+    
+          function onDeviceReady() 
+    {   
+        scroll();

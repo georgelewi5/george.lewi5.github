@@ -23,7 +23,6 @@ body {
     box-sizing: border-box;
     width: 100vw;
     overflow-x: hidden;
-    position: relative;
 }
 
 img {
@@ -33,12 +32,16 @@ img {
 .wrapper {
     display: grid;
 }
+.content-inside {
+    padding-bottom: 83px;
+}
 
 /* sticky */
 div.sticky {
     position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100vw;
   }
 
 /* Social bar */
@@ -47,10 +50,10 @@ div.sticky {
     display: grid;
     grid-template-columns: repeat(7, 14%);
     justify-items: center;
-    align-items: center;
     gap: 4px;
     z-index: 9999;
     background: #2d4249;
+    margin-right: 5000px;
 }
 .social-bar.shrink {
     background: white;
@@ -411,8 +414,8 @@ div.sticky {
 
 /* footer */
 footer {
+    display: grid;
     width: 100vw;
-    margin-top: 2rem;
     background: var(--dark);
     color: var(--light);
     text-align: center;
@@ -448,7 +451,10 @@ footer {
     .btnc {
         position:relative;
         top:50%; 
-        left:50%;
+        left:40%;
+    }
+    .social-bar {
+        justify-items: left;
     }
     
 }
@@ -482,6 +488,8 @@ footer {
     }
     .l {
         font-size: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .whole h1 {
         font-size: 4rem;
