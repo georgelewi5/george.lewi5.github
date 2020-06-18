@@ -48,6 +48,7 @@ div.sticky {
     justify-items: center;
     align-items: center;
     gap: 4px;
+    
     grid-auto-flow: column;
     z-index: 9999;
     background: #2d4249;
@@ -69,34 +70,30 @@ div.sticky {
     text-decoration: none;
     border-radius: 50%;   
 }
+.l {
+    font-size: 40px;
+}
   /* Add a hover effect if you want */
 .fa-facebook:hover {
     color: #3b5998;
-    grid-area: one;
 }
 .fa-instagram:hover {
     color: #ba36cc;
-    grid-area: two;
 }
 .fa-soundcloud:hover {
     color: #dd7a1e;
-    grid-area: three;
 }
 .fa-envelope:hover {
     color: lightblue;
-    grid-area: four;
 }
 .fa-youtube:hover {
     color: red;
-    grid-area: five;
 }
 .fa-spotify:hover {
     color: #1DB954;
-    grid-area: six;
 }
 .fa-apple:hover {
     color: #7D7D7D;
-    grid-area: seven;
 } 
   /* Set a specific color for each brand */
 .l {
@@ -423,6 +420,9 @@ footer {
         "c d"
         "e f";
     }
+    .l {
+        font-size: 35px;
+    }
 }
 @media (max-width: 540px) {
     .boxes {
@@ -435,10 +435,7 @@ footer {
     .c .d .e .f {
         display: none;
     }
-    .social-bar {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: auto auto;
-        grid-auto-flow: column;
-        
+    .l {
+        font-size: 20px;
     }
 }
