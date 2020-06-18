@@ -20,7 +20,8 @@ body {
     line-height: 1.4;
     margin: 0px;
     box-sizing: border-box;
-    
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 img {
@@ -249,6 +250,9 @@ div.sticky {
     }
 }
 /* OUT NOW */
+.sizing {
+    width: 100vw;
+}
 .out-title {
     position: relative;
     font-size: 3.5rem;
@@ -265,9 +269,10 @@ div.sticky {
     position: relative;
 }
 .boxes {
+    width: 100vw;
     padding-top: 20px;
-    display: grid;
     gap: 20px;
+    display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 33vw 33vw 33vw;
     justify-content: center;
@@ -324,7 +329,6 @@ div.sticky {
 
 
 /* Book */
-
 .columncreator {
     padding-top: 60px;
     display: grid;
@@ -405,12 +409,13 @@ div.sticky {
 
 /* footer */
 footer {
+    width: 100vw;
     margin-top: 2rem;
     background: var(--dark);
     color: var(--light);
     text-align: center;
-    padding: 1rem;
-    margin: 0px !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 @media (max-width: 950px) {
     .boxes {
@@ -432,22 +437,31 @@ footer {
         "para";
     }
     .para-text {
-        justify-self: center;
+        text-align: center;
     }
     .para-textb {
-        justify-self: center;
+        text-align: center;
     }
     .btnc {
-        justify-self: center;
+        position:relative;
+        top:50%; 
+        left:50%;
     }
+    
 }
 @media (max-width: 850px) {
     .out-title {
         font-size: 2.8rem;
     }
+    .book-title {
+        font-size: 2.8rem;
+    }
 }
 @media (max-width: 656px) {
     .out-title {
+        font-size: 2rem;
+    }
+    .book-title {
         font-size: 2rem;
     }
 }
@@ -469,6 +483,9 @@ footer {
         font-size: 4rem;
     }
     .out-title {
+        font-size: 1.8rem;
+    }
+    .book-title {
         font-size: 1.8rem;
     }
 }
