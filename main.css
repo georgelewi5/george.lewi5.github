@@ -19,6 +19,7 @@ body {
     background: var(--background);
     line-height: 1.4;
     margin: 0px;
+    box-sizing: border-box;
     
 }
 .padding-area {
@@ -44,15 +45,11 @@ div.sticky {
 .social-bar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
     gap: 4px;
-    
-    grid-auto-flow: column;
     z-index: 9999;
     background: #2d4249;
-    overflow-y: scroll;
 }
 .social-bar.shrink {
     background: white;
@@ -103,8 +100,6 @@ div.sticky {
 /* Showcase */
 
 .sfade {
-    margin-top: 25px;
-    font-size: 21px;
     text-align: center;
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -145,24 +140,24 @@ div.sticky {
 
 .showcase {
     height: 100vh;
-    width: auto;
-    min-height: 400px;
-    background: url(img/cover.jpg);
+    width: 100vw;
     background-size: cover;
     background-position: center;
-    padding: 4rem;
     padding-top: 0;
     margin-bottom: 20px;
     
 }
-
 .whole {
     display: grid;
     margin: 0 auto;
-    grid-template-rows: 35vh 65vh;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
+    grid-template-rows: 30vh 10vh 60vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/cover.jpg');
+    
 }
 .whole h1 {
     font-size: 5rem;
@@ -171,6 +166,7 @@ div.sticky {
     max-height: 4em;
     color: var(--light);
     text-align: center;
+    grid-row-start: 1;
     align-self: end;
 }
 /* Buttons */
@@ -437,5 +433,8 @@ footer {
     }
     .l {
         font-size: 20px;
+    }
+    .whole h1 {
+        font-size: 4rem;
     }
 }
