@@ -2,14 +2,15 @@
 <html lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169442783-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169442783-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'UA-169442783-1');
-</script>
+        gtag('config', 'UA-169442783-1');
+        </script>
+        <meta name="Description" content="William Hopkins, Eastboune musician. Bookings for weddings, birthdays, and pubs under £150.">
         <title>WILLIAM HOPKINS</title>
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <meta charset="UTF-8">
@@ -20,6 +21,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--For static reload-->
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+        <script src="bower_components/aos/dist/aos.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function(event) { 
                 var scrollpos = localStorage.getItem('scrollpos');
@@ -60,10 +63,10 @@
                 </section>
                 <section class="sizing">
                 <!--Boxes-->
-                <div class="columncreatorb">
-                    <div class="out-title">OUT NOW</div>
-                </div>
-                        <section class="boxes" id="out-now">
+                    <div class="columncreatorb">
+                        <div class="out-title">OUT NOW</div>
+                    </div>
+                        <section class="boxes" id="out-now" data-aos="fade-right" data-aos-duration="600">
                             <div class="box a">
                                 <a href="https://soundcloud.com/willhopkinsperformer/being-alive" target="_blank"><i class="fa fa-play-circle fa-4x circle-icon"></i></a>
                                 <img src="img/will.jpg"><!--
@@ -128,5 +131,8 @@
             </div>
         </div>
         <!--Wrapper ends-->
-     </body>
+        <script>
+            AOS.init();
+        </script>
+    </body>
  </html>
