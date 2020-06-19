@@ -523,10 +523,14 @@ footer {
     }
     .columncontainer {
         grid-template-columns: auto;
-        grid-template-rows: auto 200px;
+        grid-template-rows: auto 400px;
         align-content: center;
         grid-template-areas: 
         "img"
         "para";
+    }
+    .para-text {
+        padding-left: 10px;
+        padding-right: 13px;
     }
 }
