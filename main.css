@@ -31,9 +31,13 @@ img {
 
 .wrapper {
     display: grid;
+    place-items: center;
 }
 .content-inside {
+    display: grid;
     padding-bottom: 83px;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 /* sticky */
@@ -256,14 +260,14 @@ div.sticky {
 }
 /* OUT NOW */
 .sizing {
-    width: 100vw;
+    width: 100%;
 }
 .columncreatorb {
     padding-top: 60px;
     display: grid;
     grid-template-rows: 80px;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    width: 100vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 100%;
     pointer-events: none;
 
 }
@@ -283,12 +287,12 @@ div.sticky {
     position: relative;
 }
 .boxes {
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
     gap: 20px;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-columns: 33% 33% 33%;
     justify-content: center;
     grid-template-areas: 
     ". outnow ."
@@ -340,15 +344,59 @@ div.sticky {
 .circle-icon:hover {
      color: black;
 }
-
-
+/* About section */
+.about-header {
+    padding-top: 60px;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 100%;
+}
+.about-title {
+    position: relative;
+    font-size: 3.5rem;
+    max-height: 4em;
+    font-style: bold;
+    color: var(--text);
+    grid-row-start: 1;
+    grid-column: 2;
+    text-align: center;
+    border: 2px solid var(--text);
+}
+.about-container {
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    align-content: center;
+    grid-template-areas: 
+    "parab imgb imgb"
+    "parab imgb imgb";
+}
+.about-image {
+    max-width: 100%;
+    grid-area: imgb;
+}
+.book-para {
+    font-size: 1.3em;
+    margin-bottom: 50%;
+    max-height: 2rem;
+    grid-area: parab;
+}
+.about-para-text {
+    margin-bottom: 40px;
+    grid-row: 1;
+    color: var(--text);
+}
 /* Book */
 .columncreator {
     padding-top: 60px;
     display: grid;
     grid-template-rows: 80px;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    width: 100vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 100%;
 }
 
 .book-title {
@@ -362,15 +410,16 @@ div.sticky {
     text-align: center;
     border: 2px solid var(--text);
 }
+
 /* column creation */
 
 .columncontainer {
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
     display: grid;
     gap: 20px;
     grid-template-rows: auto auto;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     align-content: center;
     grid-template-areas: 
     "img img para"
@@ -432,7 +481,7 @@ footer {
 }
 @media (max-width: 950px) {
     .boxes {
-        grid-template-columns: 50vw 50vw;
+        grid-template-columns: 50% 50%;
         justify-content: center;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
@@ -465,6 +514,27 @@ footer {
     .social-bar {
         justify-items: left;
     }
+    .about-container {
+        grid-template-rows: auto 800px;
+        grid-template-columns: auto;
+        align-content: center;
+        grid-template-areas: 
+        "imgb"
+        "parab";
+    }
+    .about-image {
+        max-width: 100%;
+        grid-area: imgb;
+    }
+    .book-para {
+        font-size: 1.3em;
+        margin-bottom: 50%;
+        max-height: 2rem;
+        grid-area: parab;
+    }
+    .about-para-text {
+        text-align: center;
+}
     
 }
 @media (max-width: 850px) {
@@ -488,7 +558,7 @@ footer {
     }
     .columncreatorb {
         padding-top: 30px;
-        grid-template-columns: 30vw 40vw 30vw;
+        grid-template-columns: 30% 40% 30%;
         grid-template-rows: 50px;
     }
     .whole h1 {
@@ -497,7 +567,7 @@ footer {
 }
 @media (max-width: 540px) {
     .boxes {
-        grid-template-columns: 100vw;
+        grid-template-columns: 100%;
         gap: 0px;
         grid-template-rows: auto auto;
         grid-template-areas: 
