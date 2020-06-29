@@ -32,7 +32,6 @@ img {
 }
 .content-inside {
     display: grid;
-    padding-bottom: 83px;
     margin-left: 7vw;
     margin-right: 7vw;
 }
@@ -365,6 +364,7 @@ div.sticky {
     padding-top: 20px;
     display: grid;
     gap: 20px;
+    grid-template-rows: auto 200px;
     grid-template-columns: 100%;
     align-content: center;
     grid-template-areas: 
@@ -417,7 +417,6 @@ div.sticky {
 }
 /* footer */
 footer {
-    margin-top: 50px;
     display: grid;
     width: 100vw;
     background: var(--dark);
