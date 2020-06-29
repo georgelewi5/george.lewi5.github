@@ -15,7 +15,6 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
 body {
     background: var(--background);
     line-height: 1.4;
@@ -24,11 +23,9 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
-
 img {
     max-width: 100%;
 }
-
 .wrapper {
     display: grid;
     place-items: center;
@@ -39,7 +36,6 @@ img {
     margin-left: 7vw;
     margin-right: 7vw;
 }
-
 /* sticky */
 div.sticky {
     position: -webkit-sticky; /* Safari */
@@ -47,7 +43,6 @@ div.sticky {
     top: 0;
     width: 100vw;
   }
-
 /* Social bar */
 .social-bar {
     width: 100vw;
@@ -106,46 +101,38 @@ div.sticky {
     transition-duration: 0.25s;
 }
 /* Showcase */
-
 .sfade {
     text-align: center;
-
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 4s; /* Firefox < 16 */
         -ms-animation: fadein 4s; /* Internet Explorer */
          -o-animation: fadein 4s; /* Opera < 12.1 */
             animation: fadein 4s;
 }
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 .showcase {
     height: 100vh;
     width: 100vw;
@@ -153,7 +140,6 @@ div.sticky {
     background-position: center;
     padding-top: 0;
     margin-bottom: 20px;
-    
 }
 .whole {
     display: grid;
@@ -165,7 +151,6 @@ div.sticky {
     background-size: cover;
     background-position: center;
     background-image: url('img/cover.jpg');
-    
 }
 .whole h1 {
     font-size: 5rem;
@@ -178,53 +163,6 @@ div.sticky {
     align-self: start;
 }
 /* Buttons */
-.btn {
-    padding-top: 50px;
-    display: grid;
-    gap: 30px;
-    align-items: start;
-    grid-auto-flow: column;
-}
-.btna {
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 0.6rem 1.3rem;
-    border: 2px solid var(--light);
-    background: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 18px;
-    font-weight: 700;
-    transition-duration: 0.4s;
-    
-}
-.btnb {
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 0.6rem 1.3rem;
-    border: 2px solid var(--light);
-    background: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 18px;
-    font-weight: 700;
-    transition-duration: 0.4s;
-}
-.btna:hover {
-    background: var(--light);
-    color: var(--black);
-}
-.btnb:hover {
-    background: var(--light);
-    color: var(--black);
-}
-.down-arrow {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
 .down-arrow::after {
     content: "";
     width: 40px;
@@ -269,13 +207,12 @@ div.sticky {
     grid-template-columns: 33.33% 33.33% 33.33%;
     width: 100%;
     pointer-events: none;
-
 }
 .out-title {
     position: relative;
     font-size: 3.5rem;
     max-height: 4em;
-    font-style: bold;
+    font-weight: 600;
     color: var(--text);
     grid-row-start: 1;
     grid-column: 2;
@@ -291,24 +228,11 @@ div.sticky {
     padding-top: 20px;
     gap: 20px;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-template-columns: 33% 33% 33%;
     justify-content: center;
     grid-template-areas: 
-    ". outnow ."
-    "a b c"
-    "d e f";
-}
-.out-now {
-    position: relative;
-    font-size: 3.5rem;
-    max-height: 4em;
-    font-style: bold;
-    color: var(--text);
-    text-align: center;
-    border: 2px solid var(--text);
-    justify-items: center;
-    grid-area: outnow;
+    "a b c";
 }
 .a {
     grid-area: a;
@@ -318,17 +242,7 @@ div.sticky {
 } 
 .c {
     grid-area: c;
-} 
-.d {
-    grid-area: d;
-} 
-.e {
-    grid-area: e;
-} 
-.f {
-    grid-area: f;
-} 
-
+}
 /* Icons */
 .box i {
     color: white;
@@ -340,7 +254,6 @@ div.sticky {
     padding:0px;
     border-radius: 50%;
 }
-
 .circle-icon:hover {
      color: black;
 }
@@ -351,6 +264,7 @@ div.sticky {
     grid-template-rows: 80px;
     grid-template-columns: 33.33% 33.33% 33.33%;
     width: 100%;
+    font-weight: 600;
 }
 .about-title {
     position: relative;
@@ -395,9 +309,11 @@ div.sticky {
     grid-row: 1;
     color: var(--text);
     font-size: 1.3em;
+    line-height: 30px;
     display: table-cell;
     vertical-align:middle;
     text-align: center;
+    font-weight: 0;
 }
 .about-image-one {
     grid-area: wun;
@@ -432,21 +348,18 @@ div.sticky {
     grid-template-columns: 33.33% 33.33% 33.33%;
     width: 100%;
 }
-
 .book-title {
     position: relative;
     font-size: 3.5rem;
     max-height: 4em;
-    font-style: bold;
+    font-weight: 600;
     color: var(--text);
     grid-row-start: 1;
     grid-column: 2;
     text-align: center;
     border: 2px solid var(--text);
 }
-
 /* column creation */
-
 .columncontainer {
     width: 100%;
     padding-top: 20px;
@@ -463,7 +376,6 @@ div.sticky {
     margin-bottom: 50%;
     max-height: 2rem;
     grid-area: para;
-
 }
 .para-text {
     grid-row: 1;
@@ -492,7 +404,6 @@ div.sticky {
     grid-area: btnyay;
     justify-self: center;
 }
-
 .no-margin {
     margin: 0px;
 }
@@ -500,13 +411,10 @@ div.sticky {
     max-width: 100%;
     grid-area: img;
 }
-
 .btnc:hover {
     background: var(--text);
     color: var(--background);
 }
- 
-
 /* footer */
 footer {
     margin-top: 50px;
@@ -534,13 +442,13 @@ footer {
 }
 @media (max-width: 950px) {
     .boxes {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         justify-content: center;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
-        "a b"
-        "c d"
-        "e f";
+        "a"
+        "b"
+        "c";
     }
     .l {
         font-size: 35px;
@@ -563,7 +471,6 @@ footer {
     .about-para-text {
         text-align: center;
 }
-    
 }
 @media (max-width: 850px) {
     .out-title {
@@ -613,10 +520,11 @@ footer {
     .boxes {
         grid-template-columns: 100%;
         gap: 0px;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
         "a"
-        "b";
+        "b"
+        "c";
     }
     .c .d .e .f {
         display: none;
