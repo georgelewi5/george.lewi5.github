@@ -452,7 +452,7 @@ div.sticky {
     padding-top: 20px;
     display: grid;
     gap: 20px;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     align-content: center;
     grid-template-areas: 
     "img"
@@ -545,19 +545,6 @@ footer {
     .l {
         font-size: 35px;
     }
-    .columncontainer {
-        grid-template-columns: 100%;
-        grid-template-rows: auto 420px;
-        align-content: center;
-        grid-template-areas: 
-        "img"
-        "para";
-    }
-    .btnc {
-        position:relative;
-        top:50%; 
-        left:35%;
-    }
     .social-bar {
         justify-items: left;
     }
@@ -572,12 +559,6 @@ footer {
     .about-image {
         max-width: 100%;
         grid-area: imgb;
-    }
-    .book-para {
-        font-size: 1.3em;
-        margin-bottom: 50%;
-        max-height: 2rem;
-        grid-area: parab;
     }
     .about-para-text {
         text-align: center;
@@ -656,18 +637,6 @@ footer {
     }
     .about-title {
         font-size: 1.8rem;
-    }
-    .columncontainer {
-        grid-template-columns: 100%;
-        grid-template-rows: auto 400px;
-        align-content: center;
-        grid-template-areas: 
-        "img"
-        "para";
-    }
-    .para-text {
-        padding-left: 10px;
-        padding-right: 13px;
     }
     .about-container {
         grid-template-rows: auto 600px;
