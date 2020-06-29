@@ -346,7 +346,7 @@ div.sticky {
 }
 /* About section */
 .about-header {
-    padding-top: 60px;
+    padding-top: 100px;
     display: grid;
     grid-template-rows: 80px;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -368,31 +368,65 @@ div.sticky {
     padding-top: 20px;
     display: grid;
     gap: 20px;
-    grid-template-rows: auto auto;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 270px auto auto;
+    grid-template-columns: 25% 25% 50%;
     align-content: center;
+    object-fit: cover;
     grid-template-areas: 
-    "parab imgb imgb"
-    "parab imgb imgb";
+    "parab parab imgb"
+    "twuo free imgb"
+    "twuo wun imgb";
 }
 .about-image {
     max-width: 100%;
     grid-area: imgb;
+    height: 800px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+    background-image: url('img/Black-and-white-portrait-1.png');
 }
-.book-para {
-    font-size: 1.3em;
+.about-para {
     margin-bottom: 50%;
     max-height: 2rem;
     grid-area: parab;
 }
 .about-para-text {
-    margin-bottom: 40px;
     grid-row: 1;
     color: var(--text);
+    font-size: 1.3em;
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+}
+.about-image-one {
+    grid-area: wun;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/one.jpg');
+}
+.about-image-two {
+    grid-area: twuo;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/two.jpg');
+}
+.about-image-three {
+    grid-area: free;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/three.jpg');
 }
 /* Book */
 .columncreator {
-    padding-top: 60px;
+    padding-top: 100px;
     display: grid;
     grid-template-rows: 80px;
     grid-template-columns: 33.33% 33.33% 33.33%;
@@ -418,12 +452,11 @@ div.sticky {
     padding-top: 20px;
     display: grid;
     gap: 20px;
-    grid-template-rows: auto auto;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: auto;
     align-content: center;
     grid-template-areas: 
-    "img img para"
-    "img img para";
+    "img"
+    "para";
 }
 .book-para {
     font-size: 1.3em;
@@ -433,14 +466,17 @@ div.sticky {
 
 }
 .para-text {
-    margin-bottom: 40px;
     grid-row: 1;
     color: var(--text);
+    text-align: center;
 }
-.para-textb {
-    margin-top: 40px;
-    grid-row: 1;
-    color: var(--text);
+.bottom-button {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    grid-template-areas: 
+    ". btnyay .";
 }
 .btnc {
     color: var(--text);
@@ -453,6 +489,8 @@ div.sticky {
     font-size: 18px;
     font-weight: 700;
     transition-duration: 0.4s;
+    grid-area: btnyay;
+    justify-self: center;
 }
 
 .no-margin {
@@ -471,6 +509,7 @@ div.sticky {
 
 /* footer */
 footer {
+    margin-top: 50px;
     display: grid;
     width: 100vw;
     background: var(--dark);
@@ -478,6 +517,20 @@ footer {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+@media (max-width: 1600px) {
+    .about-container {
+        grid-template-rows: 400px auto auto;
+    }
+}
+@media (max-width: 1080px) {
+    .about-container {
+        grid-template-rows: auto 200px;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "imgb"
+        "parab";
+    }
 }
 @media (max-width: 950px) {
     .boxes {
@@ -493,18 +546,12 @@ footer {
         font-size: 35px;
     }
     .columncontainer {
-        grid-template-columns: auto;
-        grid-template-rows: auto 400px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 420px;
         align-content: center;
         grid-template-areas: 
         "img"
         "para";
-    }
-    .para-text {
-        text-align: center;
-    }
-    .para-textb {
-        text-align: center;
     }
     .btnc {
         position:relative;
@@ -515,8 +562,8 @@ footer {
         justify-items: left;
     }
     .about-container {
-        grid-template-rows: auto 800px;
-        grid-template-columns: auto;
+        grid-template-rows: auto 200px;
+        grid-template-columns: 100%;
         align-content: center;
         grid-template-areas: 
         "imgb"
@@ -544,12 +591,21 @@ footer {
     .book-title {
         font-size: 2.8rem;
     }
+    .about-title {
+        font-size: 2.8rem;
+    }
+    .about-container {
+        grid-template-rows: auto 300px;
+    }
 }
 @media (max-width: 656px) {
     .out-title {
         font-size: 2rem;
     }
     .book-title {
+        font-size: 2rem;
+    }
+    .about-title {
         font-size: 2rem;
     }
     .columncreator {
@@ -559,10 +615,17 @@ footer {
     .columncreatorb {
         padding-top: 30px;
         grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 80px;
+    }
+    .about-header {
+        padding-top: 30px;
         grid-template-rows: 50px;
     }
     .whole h1 {
         grid-row-start: 2;
+    }
+    .about-container {
+        grid-template-rows: auto 370px;
     }
 }
 @media (max-width: 540px) {
@@ -591,8 +654,11 @@ footer {
     .book-title {
         font-size: 1.8rem;
     }
+    .about-title {
+        font-size: 1.8rem;
+    }
     .columncontainer {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto 400px;
         align-content: center;
         grid-template-areas: 
@@ -602,5 +668,8 @@ footer {
     .para-text {
         padding-left: 10px;
         padding-right: 13px;
+    }
+    .about-container {
+        grid-template-rows: auto 600px;
     }
 }
